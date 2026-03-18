@@ -1,0 +1,44 @@
+# ============================================================
+#  .gitignore — Pipeline de Anonimização Cloud
+#  IMPORTANTE: credentials e dados sensíveis nunca devem
+#  ser versionados neste repositório.
+# ============================================================
+
+# ── CREDENCIAIS (nunca versionar) ────────────────────────────
+.streamlit/secrets.toml
+secrets.toml
+*.env
+.env
+.env.*
+
+# ── DADOS SENSÍVEIS ──────────────────────────────────────────
+dados_sinteticos/
+dados_reais/
+*.csv
+*.parquet
+*.xlsx
+*.xls
+
+# ── LOGS ─────────────────────────────────────────────────────
+sync_log.txt
+*.log
+
+# ── PYTHON ───────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+.Python
+env/
+venv/
+.venv/
+ENV/
+pip-selfcheck.json
+
+# ── IDEs ─────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
